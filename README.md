@@ -1,5 +1,8 @@
 # LIVEcell dataset semantic and instance segmentation with U-net and watershed.
-The dataset you can find <a href="https://sartorius-research.github.io/LIVECell/">here</a>.
+
+Based on and inspired by the study published in <a href="https://www.nature.com/articles/s41592-021-01249-6" target="_blank">Nature</a>.
+
+The <a href="https://sartorius-research.github.io/LIVECell/">dataset</a>.
 <br>
 ## Requirements:
 Python version 3.10.11
