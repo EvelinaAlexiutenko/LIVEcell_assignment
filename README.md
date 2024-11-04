@@ -2,7 +2,7 @@
 The dataset you can find <a href="https://sartorius-research.github.io/LIVECell/">here</a>.
 <br>
 ## Requirements:
-python version- 3.10.11
+Python version 3.10.11
 
 ```pip install requirements.txt```
 <br>
