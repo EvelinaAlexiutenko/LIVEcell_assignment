@@ -99,7 +99,7 @@ You can find it in <a href="notebooks/EDA.ipynb">EDA.ipynb</a>
 <details>
   <summary><em>References.</em></summary>
 <ul>
-    <li><a href="https://paperswithcode.com/method/u-net">U-net</a></li>
+    <li><a href="https://arxiv.org/abs/1505.04597">U-net</a></li>
     <li><a href="https://arxiv.org/abs/1611.08303">Watershed</a></li>
     <li><a href="https://cs230.stanford.edu/projects_fall_2018/reports/12353505.pdf">More info about selected architecture (U-net and Watershed)</a></li>
     <li><a href="https://www.linkedin.com/pulse/in-depth-exploration-loss-functions-deep-learning-kiran-dev-yadav/">More info about combined loss function</a></li>
