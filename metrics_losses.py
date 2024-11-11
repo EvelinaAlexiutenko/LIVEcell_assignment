@@ -37,20 +37,23 @@ def mean_iou(y_true, y_pred):
 
 # Average False Negative Rate (AFNR)
 def afnr(y_true, y_pred):
-    thresholds = [0.5, 0.6, 0.7, 0.8, 0.9]
+    thresholds = [0.50 + i * 0.05 for i in range(10)]
     fn_rates = []
     for threshold in thresholds:
         y_pred_thresh = tf.cast(y_pred > threshold, tf.float32)
-        false_negatives = tf.reduce_sum(
-            tf.cast(
-                (tf.cast(y_true, tf.float32) == 1) & (y_pred_thresh == 0), tf.float32
-            )
-        )
+        
+        # Calculate false negatives
+        false_negatives = tf.reduce_sum(tf.cast((tf.cast(y_true, tf.float32) == 1) & (y_pred_thresh == 0), tf.float32))
+        
+        # Calculate total positives (ground truth instances)
         positives = tf.reduce_sum(tf.cast(y_true == 1, tf.float32))
+        
+        # Calculate FNR for this threshold
         fn_rate = false_negatives / (positives + 1e-7)
         fn_rates.append(fn_rate)
+    
+    # Return the mean FNR across all thresholds to get AFNR
     return tf.reduce_mean(fn_rates)
-
 
 # Average Precision (AP) Metric
 def ap_metric(y_true, y_pred):
