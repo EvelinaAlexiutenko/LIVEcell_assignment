@@ -26,7 +26,7 @@ Python version 3.10.11
   Discusses the rationale behind specific train-validation-test splits for different cell types, focusing on SKOV3.
 Mentions standard split ratios and includes reasoning about model performance with varying data splits. Discovering and fixing validation leakage problem.
   
-You can find it in notebooks/EDA.ipynb
+You can find it in <a href="notebooks/EDA.ipynb">EDA.ipynb</a>
 </details>
 <details>
   <summary><em>Model selection</em></summary>
@@ -37,7 +37,7 @@ You can find it in notebooks/EDA.ipynb
   </details>
 <details>
   <summary><em>Training model and RAM issue</em></summary>
-  The training was done in Google Colab with notebooks\training_unet_watershed_keras.ipynb on T4 GPU.
+  The training was done in Google Colab with <a href="notebooks\training_unet_watershed_keras.ipynb">training_unet_watershed_keras.ipynb</a> on T4 GPU.
 
   The LIVECell dataset, including its masks, totals approximately 7GB in size. During dataset preparation, a significant challenge was encountered due to the high memory usage: the dataset caused RAM to run out quickly, interrupting the data loading process. To address this issue, a data generator was implemented.
 
@@ -57,7 +57,7 @@ You can find it in notebooks/EDA.ipynb
 
 <details>
   <summary><em>Evaluation the model</em></summary>
-  Model evaluation details can be found in the notebook training_unet_watershed_keras.ipynb.
+  Model evaluation details can be found in the notebook <a href="notebooks\training_unet_watershed_keras.ipynb">training_unet_watershed_keras.ipynb</a>.
   
   The Average Precision (AP) metrics for the U-Net semantic segmentation model are as follows:
   
