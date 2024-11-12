@@ -50,7 +50,7 @@ You can find it in <a href="notebooks/EDA.ipynb">EDA.ipynb</a>
   
   As a platform for monitoring - the <a href="https://wandb.ai/site">weights and biases</a>. 
   
-  The results which you can see in the preview photo can be found here: <a href="https://api.wandb.ai/links/aleksiutenko-evelina-odessa-i-i-mechnikov-national-unive/8ilo205t">here</a>.
+  The results which you can see in the preview photo can be found here: <a href="https://api.wandb.ai/links/aleksiutenko-evelina-odessa-i-i-mechnikov-national-unive/hzt1fjas">here</a>.
   ![image](https://github.com/user-attachments/assets/66e8fec9-4cd4-4b40-aa6f-1c3ace1b3824)
 
   </details>
